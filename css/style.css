@@ -8,6 +8,161 @@
 
 /* GENERAL 
 */
-    *{
-        font-family: ...;
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 90vw;
+    margin: auto;
+}
+.my-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col1{
+    width: 100%;
+}
+.text-box{
+    text-align: center;
+}
+
+
+/* HEADER  
+*/
+header{
+    background-color: #0084fd;
+}
+header nav li{
+    list-style: none;
+}
+header nav .flex-container{
+    justify-content: space-between;
+}
+header nav .nav-menu{
+    display: none;
+}
+
+
+/* MAIN  
+*/
+
+/* SECTION 1  */
+main .section-1 .container .my-row{
+    justify-content: space-between;
+    margin: 0 -0.625rem;
+}
+main .section-1 .container .col1{
+    margin: 0 .625rem;
+    background-color: rgb(181, 221, 255);
+    border-radius: 1.875rem;
+    margin-bottom: 1.875rem;
+}
+
+
+/* SECTION 2 */
+main .section-2{
+    background-color: rgb(151, 146, 228);
+}
+
+
+
+/* SECTION 3  */
+main .section-3 .flex-container .col1{
+    background-color: rgb(151, 146, 228);
+    border-radius: 1.875rem;
+}
+
+
+
+/* DEBUG 
+*/
+.debug header{
+    min-height: 3.75rem;
+    border: 1px dashed black;
+    margin-bottom: 2.5rem;
+}
+.debug .section-1 .container{
+    min-height: 3.75rem;
+}
+.debug .col1,
+.debug .wide-col{
+    min-height: 21.875rem;
+    border: 1px dashed black;
+    margin-bottom: 1.875rem;
+}
+/* main .section-3 .flex-container .card{
+    height: 100%;
+} */
+
+.debug .half-card{
+    height: 50%;
+    width: 100%;
+    /* background-color: rgb(46, 194, 194); */
+    border: 1px dashed black;
+    /* border-radius: 1.875rem; */
+}
+
+/*___________ RESPONSIVE___________*/
+
+/* TABLET 
+*/
+@media screen and (min-width: 768px) {
+    main .section-1 .col1{
+        width: calc((100% / 3) - 1.25rem);
     }
+    main .section-1 .wide-col{
+        width: calc((100% - (100% / 3)) - 1.25rem);
+    }
+
+/* SECTION 3 __________________ */
+    main .section-3 .col1{
+        display: flex;
+        /* DEBUG */
+        min-height: 9.375rem;
+    }
+    main .section-3 .half-card{
+        /* debug */
+        height: 100%;
+    }
+    main .section-3 .col1 .card-top{
+        width: 20%;
+    }
+    main .section-3 .col1 .card-bottom{
+        width: 80%;
+    }
+
+}
+
+
+/* DESKTOP 
+*/
+@media screen and (min-width: 992px) {
+    
+    /* HEADER __________________ */
+    header nav .hamburger-menu{
+        display: none;
+    }
+    header nav .nav-menu{
+        display: block;
+    }
+
+
+    /* SECTION 2 __________________ */
+    main .section-2 .col1{
+        width: 40%;
+    }
+    main .section-2 .flex-container{
+        justify-content: space-evenly;
+    }
+
+
+    /* SECTION 3 __________________ */
+
+
+
+}
+
