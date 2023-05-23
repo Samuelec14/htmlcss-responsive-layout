@@ -77,6 +77,21 @@ main .section-3 .flex-container .col1{
 }
 
 
+/* SECTION 4  */
+main .section-4{
+    background-color: rgb(151, 146, 228);
+
+}
+main .section-4 .container .my-row{
+    justify-content: space-between;
+    margin: 0 -0.625rem;
+}
+main .section-4 .container .my-row .col1{
+    background-color: white;
+    border-radius: 1.875rem;
+    
+}
+
 
 /* DEBUG 
 */
@@ -108,9 +123,11 @@ main .section-3 .flex-container .col1{
 
 /*___________ RESPONSIVE___________*/
 
-/* TABLET 
+/* TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET 
 */
 @media screen and (min-width: 768px) {
+
+/* SECTION 1 __________________ */
     main .section-1 .col1{
         width: calc((100% / 3) - 1.25rem);
     }
@@ -135,10 +152,15 @@ main .section-3 .flex-container .col1{
         width: 80%;
     }
 
+/* SECTION 4 __________________ */
+    main .section-4 .col1{
+        width: calc((100% / 2) - 1.25rem);
+    }
+
 }
 
 
-/* DESKTOP 
+/* DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP 
 */
 @media screen and (min-width: 992px) {
     
@@ -160,8 +182,10 @@ main .section-3 .flex-container .col1{
     }
 
 
-    /* SECTION 3 __________________ */
-
+    /* SECTION 4 __________________ */
+    main .section-4 .col1{
+        width: calc((100% / 3) - 1.25rem);
+    }
 
 
 }
