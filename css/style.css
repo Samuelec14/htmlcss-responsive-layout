@@ -32,6 +32,13 @@
 .text-box{
     text-align: center;
 }
+.button{
+    display:inline-block ;
+    background-color: white;
+    padding: .3125rem .4375rem;
+    border-radius: 10px;
+    text-align: center;
+}
 
 
 /* HEADER  
@@ -47,6 +54,30 @@ header nav .flex-container{
 }
 header nav .nav-menu{
     display: none;
+}
+header .container ul li img{
+    padding: .725rem 0;
+}
+header .container ul .hamburger-menu{
+    padding: 1.3125rem 0;
+    color: white;
+}
+header .container ul .nav-menu{
+    padding: 1.3125rem 0;
+    color: white;
+}
+header .container ul .nav-menu a{
+    text-decoration: none;
+    color: white;
+}
+header .container ul .nav-menu *{
+    margin-inline-end: .9375rem;
+}
+header .container ul .nav-menu > a:hover{
+    text-decoration: underline;
+}
+header .container ul .nav-menu .button a{
+    color: black;
 }
 
 
@@ -64,6 +95,7 @@ main .section-1 .container .col1{
     border-radius: 1.875rem;
     margin-bottom: 1.875rem;
 }
+
 
 
 /* SECTION 2 */
